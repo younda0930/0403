@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        #wrapper {
+            width: 1250px;
+            height: 650px;
+            background: dodgerblue;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        @media(max-width: 780px) {
+            #wrapper {
+                width: 100%;
+                background: yellow;
+            }
+
+            h1 {
+                font-size: 16px;
+                color: #000;
+            }
+        }
+        
+        @media(max-width: 700px) {
+            #wrapper {
+                width: 100%;
+                background: red;
+            }
+
+            h1 {
+                font-size: 20px;
+                color: #000;
+            }
+        }
+        /* @media반응형  (max-width는 px사이즈 이하일 때 적응 함)
+                         (min-width는 px사이즈 이상일 떄 적용 함)->0403-002 */
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>RESPONSIVE WEB</h1>
+    </div>
+</body>
+
+    <!--반응형 웹 (Responsive web site Design)
+            -> 1.모바일퍼스트 : 모바일 기기를 먼저 생각해서 디자인,프로그래밍 / 모바일의 매출이 높아지면서 비중이 높아짐
+            -> 2.PC퍼스트 : 모바일을 자주 사용하게 되면서 비중이 낮아짐
+        장점 : 유지관리의 용이성
+        단점 : 관리비용이 많아짐
+        pc와 모바일을 따로 나눠서 만듬
+    -->
+
+</html>
